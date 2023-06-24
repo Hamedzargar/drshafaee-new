@@ -6,6 +6,7 @@ Template Name: Home Template
 */
 get_header();
 ?>
+<div class="test">hey this is test</div>
 <div class="introSectionBack">
     <div class="introSection mainView">
         <div class="introSectionDesc">
