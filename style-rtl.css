@@ -371,33 +371,43 @@ img {
   align-items: center;
 }
 .aboutUsSection .aboutUsSectionInfo {
-  width: 40%;
+  width: 45%;
 }
 .aboutUsSection .aboutUsSectionInfo p {
   text-align: justify;
 }
 .aboutUsSection .aboutUsSectionRight {
-  width: 40%;
+  width: 47%;
   display: flex;
   flex-wrap: wrap;
 }
 .aboutUsSection .aboutUsSectionRight .aboutUsSectionBox {
-  background-color: #d4ddf8;
+  background-color: #edf3f7;
   width: 40%;
   padding: 10px;
   margin: 3px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100px;
   cursor: pointer;
-  transition: all 0.3;
 }
 .aboutUsSection .aboutUsSectionRight .aboutUsSectionBox:hover {
-  background-color: #e4e7fc;
+  background-color: #e7e7e7;
 }
 .aboutUsSection .aboutUsSectionRight .aboutUsSectionBox svg {
-  fill: #0196fc;
+  fill: #ff7065;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox .aboutUsSectionSpanCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox .aboutUsSectionSpanCol span {
+  color: #94aac0;
+  font-weight: 600;
+  font-size: 15px;
 }
 .aboutUsSection .aboutUsSectionRight .aboutUsSectionBox1 {
   border-radius: 0 25px 0 0;
