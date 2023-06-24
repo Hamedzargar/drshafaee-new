@@ -131,6 +131,43 @@ img{
         }
     }
 }
+.descriptionSectionBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(44, 98, 214 , 0.05);
+    margin: 60px auto;
+    padding: 35px 25px;
+    border-radius: 25px;
+    .descriptionBox{
+        width: 24%;
+        border-radius: 10px;
+        background: rgba(255,255,255,0.6);
+        padding: 20px;
+        transition: all 0.3s;
+        cursor: pointer;
+        .iconPart{
+            width: 50px;
+            height: 50px;
+            background-color: $mainColor;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                fill: #fff;
+                width: 25px;
+                height: 25px;
+            }
+        } 
+        span{
+            // color: $textColorLighter;
+        }
+        &:hover{
+            background-color: rgba(255,255,255,1);
+        }
+    }
+}
 .page-id-11{
     .site{
         position: relative;
@@ -257,6 +294,222 @@ img{
             }
             a{
                 color: $lowSatColor;
+            }
+        }
+    }
+}
+.personnelInfo{
+    background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+    padding: 15px;
+    .personnelInfoImg{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px;
+        img{
+            width: 30%;
+        }
+    }
+}
+.aboutUsSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+    align-items: center;
+    .aboutUsSectionInfo{
+        width: 40%;
+        p{
+            text-align: justify;
+        }
+    }
+    .aboutUsSectionRight{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        .aboutUsSectionBox{
+            background-color: $backColorDark2;
+            width: 40%;
+            padding: 10px;
+            margin: 3px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            cursor: pointer;
+            transition: all 0.3;
+            &:hover{
+                background-color: #e4e7fc;
+            }
+            svg{
+                fill: $mainColor;
+            }
+        }
+        .aboutUsSectionBox1{
+            border-radius: 0 25px 0 0;
+        }
+        .aboutUsSectionBox2{
+            border-radius: 25px 0 0 0;
+        }
+        .aboutUsSectionBox3{
+            border-radius: 0 0 25px 0;
+        }
+        .aboutUsSectionBox4{
+            border-radius: 0 0 0 25px;
+        }
+    }
+}
+.formSubmitSectionBack{
+    margin: 70px 0;
+    .formSubmitSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .formSubmitPa{
+            width: 50%;   
+            h2{
+                text-align: right;
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
+    h2{
+        text-align: center;
+    }
+    input{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 20px;
+    }
+    .wpcf7-submit{
+        background-color: $mainColorDark !important;
+        font-family: "danaweb";
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover{
+            background-color: $mainColor !important;
+        }
+    }
+    .formSubmit{
+        width: 40%;
+        padding: 15px 40px;
+        background-color: $backColorLight2;
+        border-radius: 10px;
+        box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
+    }
+}
+.page-id-20{
+    .mainHeaderBack{
+        background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+        margin-top: 0;
+        padding: 15px 0;
+    }
+    .aboutUsSectionBack{
+        .aboutUsSection{
+            .aboutUsSectionRight{
+                width: 30%;
+            }
+            .aboutUsSectionInfo{
+                width: 45%;
+            }
+        }
+    }
+
+}
+.page-id-18{
+    .mainHeaderBack{
+        background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+        margin-top: 0;
+        padding: 15px 0;
+    }
+    .formSubmitSectionBack{
+        width: 45% !important;
+        margin: 50px 0;
+        background: none;
+        .formSubmit{
+            width: 100% !important;
+            background: none;
+        }
+        input{
+            background: #ebeffa;
+        }
+    }
+}
+.contactPageBack{
+    .contactPage{
+        .contactPageSectionHeading{
+            text-align: center;
+            margin: 50px 0;
+        }
+        .contactPageBox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            .contactDetail{
+                width: 45%;       
+                .contactIconSection{
+                    margin: 25px 0;
+                    border-bottom: 1px solid #2c62d6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .rowUp{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        width: 100%;
+                        a{
+                            width: 24%;
+                        }
+                    }
+                    .rowDown {
+                        margin: 30px 0;
+                    }
+                    a{
+                        display: flex;
+                        svg{
+                            height: 100%;
+                            fill: $lowSatColor;
+                        }
+                        span{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.contactIconSocial{
+    display: flex;
+    justify-content: left;
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        background-color: $backColorLight;
+        border-radius: 100%;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+        svg{
+            margin: 0 5px;
+            fill: $lowSatColor;
+            width: 22px;
+            height: 22px;
+            transition: all 0.3s;
+            &:hover{
+                fill: $mainColorDark;
             }
         }
     }

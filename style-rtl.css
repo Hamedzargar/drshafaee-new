@@ -171,6 +171,41 @@ img {
   width: 30%;
 }
 
+.descriptionSectionBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(44, 98, 214, 0.05);
+  margin: 60px auto;
+  padding: 35px 25px;
+  border-radius: 25px;
+}
+.descriptionSectionBox .descriptionBox {
+  width: 24%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.descriptionSectionBox .descriptionBox .iconPart {
+  width: 50px;
+  height: 50px;
+  background-color: #0196fc;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.descriptionSectionBox .descriptionBox .iconPart svg {
+  fill: #fff;
+  width: 25px;
+  height: 25px;
+}
+.descriptionSectionBox .descriptionBox:hover {
+  background-color: rgb(255, 255, 255);
+}
+
 .page-id-11 .site {
   position: relative;
 }
@@ -292,4 +327,214 @@ img {
 }
 .mainFooterBack .footerCopyRightParent .footerCopyRight a {
   color: #638be3;
+}
+
+.personnelInfo {
+  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+  padding: 15px;
+}
+.personnelInfo .personnelInfoImg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+}
+.personnelInfo .personnelInfoImg img {
+  width: 30%;
+}
+
+.aboutUsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px 0;
+  align-items: center;
+}
+.aboutUsSection .aboutUsSectionInfo {
+  width: 40%;
+}
+.aboutUsSection .aboutUsSectionInfo p {
+  text-align: justify;
+}
+.aboutUsSection .aboutUsSectionRight {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox {
+  background-color: #d4ddf8;
+  width: 40%;
+  padding: 10px;
+  margin: 3px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  cursor: pointer;
+  transition: all 0.3;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox:hover {
+  background-color: #e4e7fc;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox svg {
+  fill: #0196fc;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox1 {
+  border-radius: 0 25px 0 0;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox2 {
+  border-radius: 25px 0 0 0;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox3 {
+  border-radius: 0 0 25px 0;
+}
+.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox4 {
+  border-radius: 0 0 0 25px;
+}
+
+.formSubmitSectionBack {
+  margin: 70px 0;
+}
+.formSubmitSectionBack .formSubmitSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.formSubmitSectionBack .formSubmitSection .formSubmitPa {
+  width: 50%;
+}
+.formSubmitSectionBack .formSubmitSection .formSubmitPa h2 {
+  text-align: right;
+}
+.formSubmitSectionBack .formSubmitSection .formSubmitPa p {
+  text-align: justify;
+}
+.formSubmitSectionBack h2 {
+  text-align: center;
+}
+.formSubmitSectionBack input {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 20px;
+}
+.formSubmitSectionBack .wpcf7-submit {
+  background-color: #2c62d6 !important;
+  font-family: "danaweb";
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.formSubmitSectionBack .wpcf7-submit:hover {
+  background-color: #0196fc !important;
+}
+.formSubmitSectionBack .formSubmit {
+  width: 40%;
+  padding: 15px 40px;
+  background-color: #ebeffa;
+  border-radius: 10px;
+  box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
+}
+
+.page-id-20 .mainHeaderBack {
+  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+  margin-top: 0;
+  padding: 15px 0;
+}
+.page-id-20 .aboutUsSectionBack .aboutUsSection .aboutUsSectionRight {
+  width: 30%;
+}
+.page-id-20 .aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo {
+  width: 45%;
+}
+
+.page-id-18 .mainHeaderBack {
+  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+  margin-top: 0;
+  padding: 15px 0;
+}
+.page-id-18 .formSubmitSectionBack {
+  width: 45% !important;
+  margin: 50px 0;
+  background: none;
+}
+.page-id-18 .formSubmitSectionBack .formSubmit {
+  width: 100% !important;
+  background: none;
+}
+.page-id-18 .formSubmitSectionBack input {
+  background: #ebeffa;
+}
+
+.contactPageBack .contactPage .contactPageSectionHeading {
+  text-align: center;
+  margin: 50px 0;
+}
+.contactPageBack .contactPage .contactPageBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail {
+  width: 45%;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection {
+  margin: 25px 0;
+  border-bottom: 1px solid #2c62d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection .rowUp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection .rowUp a {
+  width: 24%;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection .rowDown {
+  margin: 30px 0;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection a {
+  display: flex;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection a svg {
+  height: 100%;
+  fill: #638be3;
+}
+.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection a span {
+  margin-right: 5px;
+}
+
+.contactIconSocial {
+  display: flex;
+  justify-content: left;
+}
+.contactIconSocial a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #f4f5fc;
+  border-radius: 100%;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+}
+.contactIconSocial a svg {
+  margin: 0 5px;
+  fill: #638be3;
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s;
+}
+.contactIconSocial a svg:hover {
+  fill: #2c62d6;
 }/*# sourceMappingURL=style-rtl.css.map */
