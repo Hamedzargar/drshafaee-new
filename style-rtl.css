@@ -225,4 +225,71 @@ img {
 .margined30 {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.mainFooterBack {
+  padding-top: 30px;
+  margin-top: 30px;
+  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+}
+.mainFooterBack .mainFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mainFooterBack .footerCulomn1 {
+  width: 28%;
+}
+.mainFooterBack .footerCulomn1 .logoSection svg {
+  height: 70px;
+}
+.mainFooterBack .footerCulomn1 p {
+  text-align: justify;
+}
+.mainFooterBack .footerCulomn2 {
+  width: 15%;
+}
+.mainFooterBack .footerCulomn2 .innerGeneralFooter li {
+  list-style-type: none;
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+.mainFooterBack .footerCulomn2 .innerGeneralFooter li svg {
+  height: 100%;
+  fill: #638be3;
+}
+.mainFooterBack .footerCulomn2 .innerGeneralFooter li span {
+  margin-right: 5px;
+}
+.mainFooterBack .footerCulomn2 .innerGeneralFooter li span:hover {
+  color: #0196fc;
+}
+.mainFooterBack .footerCulomn3 {
+  width: 15%;
+}
+.mainFooterBack .footerCulomn3 .innerLinkFooter li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+.mainFooterBack .footerCulomn3 .innerLinkFooter li a:hover {
+  color: #0196fc;
+}
+.mainFooterBack .footerCulomn4 {
+  width: 15%;
+}
+.mainFooterBack .footerCopyRightParent {
+  padding: 25px 0 15px 0;
+}
+.mainFooterBack .footerCopyRightParent .footerCopyRight p {
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid #2c62d6;
+  padding-top: 10px;
+}
+.mainFooterBack .footerCopyRightParent .footerCopyRight a {
+  color: #638be3;
 }/*# sourceMappingURL=style-rtl.css.map */
