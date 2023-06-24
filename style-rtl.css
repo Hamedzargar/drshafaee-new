@@ -225,4 +225,8 @@ img {
 .margined30 {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+* {
+  background-color: red;
 }/*# sourceMappingURL=style-rtl.css.map */
