@@ -6,6 +6,9 @@ Template Name: Home Template
 */
 get_header();
 ?>
+<div class="test">
+    <p>lorl;gkg</p>
+</div>
 <div class="introSectionBack">
     <div class="introSection mainView">
         <div class="introSectionDesc">
