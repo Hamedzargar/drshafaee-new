@@ -295,6 +295,16 @@ img {
 .mainFooterBack .footerCulomn1 {
   width: 28%;
 }
+@media screen and (max-width: 480px) {
+  .mainFooterBack .footerCulomn1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainFooterBack .footerCulomn1 {
+    width: 100%;
+  }
+}
 .mainFooterBack .footerCulomn1 .logoSection svg {
   height: 70px;
 }
@@ -303,6 +313,16 @@ img {
 }
 .mainFooterBack .footerCulomn2 {
   width: 15%;
+}
+@media screen and (max-width: 480px) {
+  .mainFooterBack .footerCulomn2 {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainFooterBack .footerCulomn2 {
+    width: 30%;
+  }
 }
 .mainFooterBack .footerCulomn2 .innerGeneralFooter li {
   list-style-type: none;
@@ -325,6 +345,16 @@ img {
 .mainFooterBack .footerCulomn3 {
   width: 15%;
 }
+@media screen and (max-width: 480px) {
+  .mainFooterBack .footerCulomn3 {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainFooterBack .footerCulomn3 {
+    width: 30%;
+  }
+}
 .mainFooterBack .footerCulomn3 .innerLinkFooter li {
   list-style-type: none;
   padding: 5px 0;
@@ -333,7 +363,17 @@ img {
   color: #0196fc;
 }
 .mainFooterBack .footerCulomn4 {
-  width: 15%;
+  width: 21%;
+}
+@media screen and (max-width: 480px) {
+  .mainFooterBack .footerCulomn4 {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainFooterBack .footerCulomn4 {
+    width: 30%;
+  }
 }
 .mainFooterBack .footerCopyRightParent {
   padding: 25px 0 15px 0;
@@ -491,12 +531,34 @@ img {
   margin: 50px 0;
   background: none;
 }
+@media screen and (max-width: 480px) {
+  .page-id-18 .formSubmitSectionBack {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-id-18 .formSubmitSectionBack {
+    width: 90% !important;
+    margin: 50px auto;
+  }
+}
 .page-id-18 .formSubmitSectionBack .formSubmit {
   width: 100% !important;
   background: none;
 }
 .page-id-18 .formSubmitSectionBack input {
   background: #ebeffa;
+}
+@media screen and (max-width: 480px) {
+  .page-id-18 .contactDetail {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-id-18 .contactDetail {
+    width: 90% !important;
+    margin: auto;
+  }
 }
 
 .contactPageBack .contactPage .contactPageSectionHeading {
@@ -545,7 +607,7 @@ img {
 
 .contactIconSocial {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 .contactIconSocial a {
   display: flex;
@@ -553,7 +615,7 @@ img {
   align-items: center;
   width: 40px;
   height: 40px;
-  margin: 5px;
+  margin: 5px 7px;
   background-color: #f4f5fc;
   border-radius: 100%;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);

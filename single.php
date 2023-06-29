@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main mainView singlePostParent">
 
 		<?php
 		while ( have_posts() ) :
@@ -18,13 +18,22 @@ get_header();
 
 			get_template_part( 'template-parts/content', get_post_type() );
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'drshafaee' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'drshafaee' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
+			// the_post_navigation(
+			// 	array(
+			// 		'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'drshafaee' ) . '</span> <span class="nav-title">%title</span>',
+			// 		'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'drshafaee' ) . '</span> <span class="nav-title">%title</span>',
+			// 	)
+			// );
+			?>
+			<div class="relatedPostParent generalLightBox">
+				<div class="homeSectionTitle">
+					<h2>مطالب مشابه</h2>
+				</div>
+				<ul class="relatedPost">
+					<?php get_related_posts($post) ?>
+				</ul>
+			</div>
+			<?php
 			// If comments are open or we have at least one comment, load up the comment template.
 			if ( comments_open() || get_comments_number() ) :
 				comments_template();
@@ -36,5 +45,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

@@ -47,6 +47,9 @@ $backColorLight2: #ebeffa;
 $lowSatColor: #638be3;
 $offColor: #ff7a71;
 
+@import 'sass/breakpoints';
+@import 'sass/variables';
+
 @mixin placeholder {
 	&::-webkit-input-placeholder {@content}
 	&:-moz-placeholder           {@content}
@@ -256,6 +259,12 @@ img{
     background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
     .footerCulomn1{
         width: 28%;
+        @include xs{
+            width: 100%;
+        }
+        @include sm{
+            width: 100%;
+        }
         .logoSection{
             svg{
                 height: 70px;
@@ -266,7 +275,13 @@ img{
         }
     }
     .footerCulomn2{
-        width: 15%;    
+        width: 15%;
+        @include xs{
+            width: 50% !important;
+        }
+        @include sm{
+            width: 30%;
+        }  
         .innerGeneralFooter{
             li{
                 list-style-type: none;
@@ -290,6 +305,12 @@ img{
     }
     .footerCulomn3{
         width: 15%;
+        @include xs{
+            width: 50% !important;
+        }
+        @include sm{
+            width: 30%;
+        }
         .innerLinkFooter{
             li{
                 list-style-type: none;
@@ -303,7 +324,13 @@ img{
         }
     }
     .footerCulomn4{
-        width: 15%;
+        width: 21%;
+        @include xs{
+            width: 100% !important;
+        }
+        @include sm{
+            width: 30%;
+        }
     }
     .footerCopyRightParent{
         padding: 25px 0 15px 0;
@@ -466,12 +493,28 @@ img{
         width: 45% !important;
         margin: 50px 0;
         background: none;
+        @include xs{
+            width: 100% !important;
+        }
+        @include sm{
+            width: 90% !important;
+            margin: 50px auto;
+        }
         .formSubmit{
             width: 100% !important;
             background: none;
         }
         input{
             background: #ebeffa;
+        }
+    }
+    .contactDetail{
+        @include xs{
+            width: 100% !important;
+        }
+        @include sm{
+            width: 90% !important;
+            margin: auto;
         }
     }
 }
@@ -524,14 +567,14 @@ img{
 }
 .contactIconSocial{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     a{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40px;
         height: 40px;
-        margin: 5px;
+        margin: 5px 7px;
         background-color: $backColorLight;
         border-radius: 100%;
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
