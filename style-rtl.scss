@@ -264,19 +264,6 @@ img{
         }
     }
 }
-.personnelInfo{
-    background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-    padding: 15px;
-    .personnelInfoImg{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 30px;
-        img{
-            width: 30%;
-        }
-    }
-}
 .aboutUsSectionBack{
     .aboutUsSection{
         display: flex;
@@ -339,6 +326,30 @@ img{
                 }
                 &:nth-child(4){
                     border-bottom-left-radius: 40px;
+                }
+            }
+        }
+    }
+}
+.servicesSectionBack{
+    .servicesSection{
+        .servicesParent{
+            display: grid;
+            grid-template-columns: repeat(5,minmax(0,1fr));
+            grid-gap: 30px;
+            .serviceItem{
+                display: block;
+                text-align: center;
+                .iconBox{
+                    background-color: $mainColor;
+                    width: 120px;
+                    height: 120px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 7px;
+                }
+                h3{
+                    font-size: 17px;
                 }
             }
         }
@@ -495,60 +506,6 @@ img{
             width: 20px;
             height: 20px;
             fill: $textColorSemi;
-        }
-    }
-}
-.serviceUsSectionHomeBack{
-    background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-    .serviceUsSectionHome{
-        padding: 20px;
-        width: 70%;
-        .serviceUsSectionHeading{
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .serviceUsSectionImageRow1{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin: 40px 0;
-            .serviceUsSectionSvg{
-                svg{
-                    width: 100px;
-                    height: 100px;
-                    background: #469fe2;
-                    padding: 30px;
-                    border-radius: 5px;
-                    fill: #fff;
-                    box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
-                }
-                p{
-                    text-align: center;
-                }
-            }
-        }
-        .serviceUsSectionImageRow2{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 77%;
-            margin: auto;
-            .serviceUsSectionSvg{
-                svg{
-                    width: 100px;
-                    height: 100px;
-                    background: #469fe2;
-                    padding: 30px;
-                    border-radius: 5px;
-                    fill: #fff;
-                    box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
-                }
-                p{
-                    text-align: center;
-                }
-            }
         }
     }
 }

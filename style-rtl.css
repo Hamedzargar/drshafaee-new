@@ -873,20 +873,6 @@ img {
   color: #638be3;
 }
 
-.personnelInfo {
-  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-  padding: 15px;
-}
-.personnelInfo .personnelInfoImg {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px;
-}
-.personnelInfo .personnelInfoImg img {
-  width: 30%;
-}
-
 .aboutUsSectionBack .aboutUsSection {
   display: flex;
   flex-wrap: wrap;
@@ -947,6 +933,27 @@ img {
 }
 .aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox:nth-child(4) {
   border-bottom-left-radius: 40px;
+}
+
+.servicesSectionBack .servicesSection .servicesParent {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-gap: 30px;
+}
+.servicesSectionBack .servicesSection .servicesParent .serviceItem {
+  display: block;
+  text-align: center;
+}
+.servicesSectionBack .servicesSection .servicesParent .serviceItem .iconBox {
+  background-color: #0196fc;
+  width: 120px;
+  height: 120px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 7px;
+}
+.servicesSectionBack .servicesSection .servicesParent .serviceItem h3 {
+  font-size: 17px;
 }
 
 .consultationSectionBack .consultationSection {
@@ -1098,57 +1105,6 @@ img {
   width: 20px;
   height: 20px;
   fill: #28416e;
-}
-
-.serviceUsSectionHomeBack {
-  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome {
-  padding: 20px;
-  width: 70%;
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionHeading {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionImageRow1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 40px 0;
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionImageRow1 .serviceUsSectionSvg svg {
-  width: 100px;
-  height: 100px;
-  background: #469fe2;
-  padding: 30px;
-  border-radius: 5px;
-  fill: #fff;
-  box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionImageRow1 .serviceUsSectionSvg p {
-  text-align: center;
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionImageRow2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 77%;
-  margin: auto;
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionImageRow2 .serviceUsSectionSvg svg {
-  width: 100px;
-  height: 100px;
-  background: #469fe2;
-  padding: 30px;
-  border-radius: 5px;
-  fill: #fff;
-  box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
-}
-.serviceUsSectionHomeBack .serviceUsSectionHome .serviceUsSectionImageRow2 .serviceUsSectionSvg p {
-  text-align: center;
 }
 
 .contactUsPageParent {
