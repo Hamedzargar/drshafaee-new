@@ -59,6 +59,9 @@ h1,h2,h3,h4,h5,h6{
 .highPadding{
 	padding: 30px;
 }
+.sectionPadding{
+	padding: 50px 0;
+}
 .centeredText{
 	text-align: center;
 }
@@ -250,14 +253,6 @@ li{
 		height: 19px;
 		background-color: initial;
 	}
-}
-
-.subHeading{
-	color: #28416e;
-	display: block;
-	margin: 10px 0;
-	font-size: 14px;
-	line-height: 25px;
 }
 
 label{

@@ -277,108 +277,85 @@ img{
         }
     }
 }
-.aboutUsSection{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 50px 0;
-    align-items: center;
-    .aboutUsSectionInfo{
-        width: 45%;
-        p{
-            text-align: justify;
-        }
-    }
-    .aboutUsSectionRight{
-        width: 47%;
-        display: flex;
-        flex-wrap: wrap;
-        .aboutUsSectionBox{
-            background-color: #edf3f7;
-            width: 40%;
-            padding: 10px;
-            margin: 3px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            height: 100px;
-            cursor: pointer;
-            &:hover{
-                background-color: #e7e7e7;
-            }
-            svg{
-                fill: #ff7065;
-            }
-            .aboutUsSectionSpanCol{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 50px;
-                span{
-                    color: #94aac0;
-                    font-weight: 600;
-                    font-size: 15px;
-                }
-            }
-        }
-        .aboutUsSectionBox1{
-            border-radius: 0 25px 0 0;
-        }
-        .aboutUsSectionBox2{
-            border-radius: 25px 0 0 0;
-        }
-        .aboutUsSectionBox3{
-            border-radius: 0 0 25px 0;
-        }
-        .aboutUsSectionBox4{
-            border-radius: 0 0 0 25px;
-        }
-    }
-}
-.formSubmitSectionBack{
-    margin: 70px 0;
-    .formSubmitSection{
+.aboutUsSectionBack{
+    .aboutUsSection{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        .formSubmitPa{
-            width: 50%;   
-            h2{
-                text-align: right;
+        .aboutUsSectionInfo{
+            width: 45%;
+            .generalHeading{
+                span{
+                    font-size: 14px;
+                }
             }
             p{
-                text-align: justify;
+                color: $textColorSemi;
+            }
+        }
+        .aboutUsSectionBoxes{
+            width: 40%;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            grid-gap: 3px;
+            .aboutUsSectionBox{
+                background-color: $backColorLight;
+                transition: all 0.3s;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                &:hover{
+                    background-color: darken($backColorLight , 3%);
+                }
+                svg{
+                    fill: #ff7065;
+                }
+                .aboutUsSectionCounter{
+                    >span{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        color: $textColorSemi;
+                        &:nth-child(1){
+                            font-size: 35px;
+                            font-weight: 700;
+                            line-height: 30px;
+                        }
+                        &:nth-child(2){
+                            font-size: 15px;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    border-top-right-radius: 40px;
+                }
+                &:nth-child(2){
+                    border-top-left-radius: 40px;
+                }
+                &:nth-child(3){
+                    border-bottom-right-radius: 40px;
+                }
+                &:nth-child(4){
+                    border-bottom-left-radius: 40px;
+                }
             }
         }
     }
-    h2{
-        text-align: center;
-    }
-    input{
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 15px 10px;
-    border: none;
-    border-radius: 20px;
-    }
-    .wpcf7-submit{
-        background-color: $mainColorDark !important;
-        font-family: "danaweb";
-        color: #fff;
-        font-weight: 600;
-        cursor: pointer;
-        &:hover{
-            background-color: $mainColor !important;
+}
+.consultationSectionBack{
+    .consultationSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .consultationSectionForm{
+            width: 45%;
         }
-    }
-    .formSubmit{
-        width: 40%;
-        padding: 15px 40px;
-        background-color: $backColorLight2;
-        border-radius: 10px;
-        box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
+        .consultationSectionInfo{
+            width: 45%;
+        }
     }
 }
 .page-id-20{

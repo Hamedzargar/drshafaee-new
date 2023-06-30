@@ -164,6 +164,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px;
 }
 
+.sectionPadding {
+  padding: 50px 0;
+}
+
 .centeredText {
   text-align: center;
 }
@@ -379,14 +383,6 @@ li::before {
   width: 16px;
   height: 19px;
   background-color: initial;
-}
-
-.subHeading {
-  color: #28416e;
-  display: block;
-  margin: 10px 0;
-  font-size: 14px;
-  line-height: 25px;
 }
 
 label {
@@ -891,110 +887,79 @@ img {
   width: 30%;
 }
 
-.aboutUsSection {
+.aboutUsSectionBack .aboutUsSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50px 0;
   align-items: center;
 }
-.aboutUsSection .aboutUsSectionInfo {
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo {
   width: 45%;
 }
-.aboutUsSection .aboutUsSectionInfo p {
-  text-align: justify;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo .generalHeading span {
+  font-size: 14px;
 }
-.aboutUsSection .aboutUsSectionRight {
-  width: 47%;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo p {
+  color: #28416e;
+}
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 3px;
+}
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox {
+  background-color: #f4f5fc;
+  transition: all 0.3s;
   display: flex;
   flex-wrap: wrap;
-}
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox {
-  background-color: #edf3f7;
-  width: 40%;
-  padding: 10px;
-  margin: 3px;
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  height: 100px;
-  cursor: pointer;
+  justify-content: space-around;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox:hover {
-  background-color: #e7e7e7;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox:hover {
+  background-color: #e8eaf9;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox svg {
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox svg {
   fill: #ff7065;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox .aboutUsSectionSpanCol {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50px;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #28416e;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox .aboutUsSectionSpanCol span {
-  color: #94aac0;
-  font-weight: 600;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span:nth-child(1) {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span:nth-child(2) {
   font-size: 15px;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox1 {
-  border-radius: 0 25px 0 0;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox:nth-child(1) {
+  border-top-right-radius: 40px;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox2 {
-  border-radius: 25px 0 0 0;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox:nth-child(2) {
+  border-top-left-radius: 40px;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox3 {
-  border-radius: 0 0 25px 0;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox:nth-child(3) {
+  border-bottom-right-radius: 40px;
 }
-.aboutUsSection .aboutUsSectionRight .aboutUsSectionBox4 {
-  border-radius: 0 0 0 25px;
+.aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes .aboutUsSectionBox:nth-child(4) {
+  border-bottom-left-radius: 40px;
 }
 
-.formSubmitSectionBack {
-  margin: 70px 0;
-}
-.formSubmitSectionBack .formSubmitSection {
+.consultationSectionBack .consultationSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-.formSubmitSectionBack .formSubmitSection .formSubmitPa {
-  width: 50%;
+.consultationSectionBack .consultationSection .consultationSectionForm {
+  width: 45%;
 }
-.formSubmitSectionBack .formSubmitSection .formSubmitPa h2 {
-  text-align: right;
-}
-.formSubmitSectionBack .formSubmitSection .formSubmitPa p {
-  text-align: justify;
-}
-.formSubmitSectionBack h2 {
-  text-align: center;
-}
-.formSubmitSectionBack input {
-  margin-top: 5px;
-  display: block;
-  width: 100%;
-  padding: 15px 10px;
-  border: none;
-  border-radius: 20px;
-}
-.formSubmitSectionBack .wpcf7-submit {
-  background-color: #2c62d6 !important;
-  font-family: "danaweb";
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-}
-.formSubmitSectionBack .wpcf7-submit:hover {
-  background-color: #0196fc !important;
-}
-.formSubmitSectionBack .formSubmit {
-  width: 40%;
-  padding: 15px 40px;
-  background-color: #ebeffa;
-  border-radius: 10px;
-  box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
+.consultationSectionBack .consultationSection .consultationSectionInfo {
+  width: 45%;
 }
 
 .page-id-20 .mainHeaderBack {
