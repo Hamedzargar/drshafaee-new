@@ -17,10 +17,6 @@ get_header();
         <h1>هدینگ صفحه با زیر هدینگ</h1>
         <span>این یک زیر هدینگ برای یک هدینگ است</span>
     </div>
-    <div class="generalHeading highMargined mediumWeight">
-        <h1>هدینگ صفحه با زیر هدینگ</h1>
-        <span>این یک زیر هدینگ برای یک هدینگ است</span>
-    </div>
     <h1>هدینگ یک</h1>
     <h2>هدینگ دو</h2>
     <h3>هدینگ سه</h3>
