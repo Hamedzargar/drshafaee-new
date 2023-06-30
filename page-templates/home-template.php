@@ -6,7 +6,7 @@ Template Name: Home Template
 */
 get_header();
 ?>
-<div class="introSectionBack">
+<div class="introSectionBack gradient1">
     <div class="introSection mainView">
         <div class="introSectionDesc">
             <h1 class="bigHeading">دکتر یوسف شفائی
@@ -14,7 +14,7 @@ get_header();
                 فوق تخصص جراحی زیبایی و ترمیمی
             </h1>
             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
-            <a href="#" class="generalButton margined30">رزرو نوبت</a>
+            <a href="#" class="generalButton highMargined">رزرو نوبت</a>
         </div>
         <div class="introSectionImg">
             <img src="<?php echo get_template_directory_uri() ?>/img/doc.webp" alt="">

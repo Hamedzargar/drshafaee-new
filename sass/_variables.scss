@@ -1,30 +1,43 @@
-$mainTextColor : #2C2C2C;
-$secondTextColor : #3C3C3C;
-$greyColor : #797979;
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Hairline.woff2'); font-weight: 50;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Thin.woff2'); font-weight: 100;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-UltraLight.woff2'); font-weight: 200;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Light.woff2'); font-weight: 300;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Regular.woff2'); font-weight: 400;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Medium.woff2'); font-weight: 500;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-DemiBold.woff2'); font-weight: 600;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Bold.woff2'); font-weight: 700;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-ExtraBold.woff2'); font-weight: 800;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Black.woff2'); font-weight: 900;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-ExtraBlack.woff2'); font-weight: 910;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Heavy.woff2'); font-weight: 950;}
+@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-fat.woff2'); font-weight: 990;}
 
-@mixin displayer{
-	opacity: 1;
-	visibility: visible;
-}
-@mixin displayerI{
-	opacity: 1 !important;
-	visibility: visible !important;
-}
-@mixin hider{
-	opacity: 0;
-	visibility: hidden;
-}
-@mixin hiderI{
-	opacity: 0 !important;
-	visibility: hidden !important;
-}
-@mixin trDisplayer{
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);
-}
-@mixin sbflex{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+
+//Text Colors
+$textColorDark: #001b4c;
+$textColorLowSat: #31343a;
+$textColorSemi: #28416e;
+$textColorLight: #415781;
+$textColorLighter: #7687a7;
+
+//Main Colors
+$mainColor: #0196fc;
+$mainColorDark: #2c62d6;
+$lowSatColor: #638be3;
+$offColor: #ff7a71;
+
+//Gradient Colors
+$backColorDark: #e2e5fc;
+$backColorLight: #f4f5fc;
+$backColorDark2: #d4ddf8;
+$backColorLight2: #ebeffa;
+$backColorDark3: #0d5483;
+$backColorLight3: #16699f;
+
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+	&:-ms-input-placeholder      {@content}  
 }

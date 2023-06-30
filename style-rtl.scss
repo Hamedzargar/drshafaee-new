@@ -21,52 +21,9 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Hairline.woff2'); font-weight: 50;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Thin.woff2'); font-weight: 100;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-UltraLight.woff2'); font-weight: 200;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Light.woff2'); font-weight: 300;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Regular.woff2'); font-weight: 400;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Medium.woff2'); font-weight: 500;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-DemiBold.woff2'); font-weight: 600;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Bold.woff2'); font-weight: 700;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-ExtraBold.woff2'); font-weight: 800;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Black.woff2'); font-weight: 900;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-ExtraBlack.woff2'); font-weight: 910;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-Heavy.woff2'); font-weight: 950;}
-@font-face { font-family: 'danaweb';src: url('fonts/danafn/DanaFaNum-fat.woff2'); font-weight: 990;}
-
-$mainColor: #0196fc;
-$mainColorDark: #2c62d6;
-$textColorDark: #001b4c;
-$textColorSemi: #28416e;
-$textColorLight: #415781;
-$backColorDark: #e2e5fc;
-$backColorLight: #f4f5fc;
-$backColorDark2: #d4ddf8;
-$backColorLight2: #ebeffa;
-$lowSatColor: #638be3;
-$offColor: #ff7a71;
-
-@import 'sass/breakpoints';
 @import 'sass/variables';
-
-@mixin placeholder {
-	&::-webkit-input-placeholder {@content}
-	&:-moz-placeholder           {@content}
-	&::-moz-placeholder          {@content}
-	&:-ms-input-placeholder      {@content}  
-}
-
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: danaweb;
-    color: $textColorDark;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
+@import 'sass/breakpoints';
+@import 'sass/source';
 a{
     color: $textColorDark;
     text-decoration: none;
@@ -127,7 +84,6 @@ img{
     
 }
 .introSectionBack{
-    background: linear-gradient(0deg , $backColorDark 0% , $backColorLight 100%);
     padding-top: 150px;
     padding-bottom: 80px;
     .introSection{
@@ -207,46 +163,6 @@ img{
         margin-bottom: 30px;
     }
     
-}
-.bigHeading{
-    font-size: 35px;
-}
-.generalButton{
-    background-color: $mainColorDark;
-    border-radius: 45px;
-    position: relative;
-    color: #fff;
-    padding: 10px 25px 10px 45px;
-    font-size: 15.5px;
-    display: block;
-    width: max-content;
-    &::before{
-        content: '';
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        background-color: rgba(255,255,255,0.2);
-        left: 15px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        border-radius: 100%;
-    }
-    &::after{
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='10px' height='10px' viewBox='0 0 512 512'%3E%3Cpath d='M357.6 500.8a18.3 18.3 0 0 1-12.9-5.4L152 302.7a66.1 66.1 0 0 1 0-93.4L344.7 16.6a18.2 18.2 0 1 1 25.8 25.8L177.8 235.1a29.5 29.5 0 0 0 0 41.8l192.7 192.7a18.3 18.3 0 0 1 0 25.8 17.9 17.9 0 0 1-12.9 5.4Z'%3E%3C/path%3E%3C/svg%3E");
-        height: 18px;
-        position: absolute;
-        left: 19px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-}
-.margined30{
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 .mainFooterBack{
     padding-top: 30px;
