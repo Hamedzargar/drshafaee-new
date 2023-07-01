@@ -873,11 +873,14 @@ img {
   color: #638be3;
 }
 
-.aboutUsSectionBack .aboutUsSection {
+.personnelInfo {
+  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
+  padding: 15px;
+}
+.personnelInfo .personnelInfoImg {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-<<<<<<< Updated upstream
   padding: 30px;
 }
 .personnelInfo .personnelInfoImg img {
@@ -888,8 +891,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-=======
->>>>>>> Stashed changes
   align-items: center;
 }
 .aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo {
@@ -900,55 +901,6 @@ img {
 }
 .aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo p {
   color: #28416e;
-<<<<<<< Updated upstream
-}
-
-.aboutUsSectionBoxes {
-  width: 40%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-gap: 3px;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox {
-  background-color: #f4f5fc;
-  transition: all 0.3s;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox:hover {
-  background-color: #e8eaf9;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox svg {
-  fill: #ff7065;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span {
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: #28416e;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span:nth-child(1) {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 30px;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span:nth-child(2) {
-  font-size: 15px;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(1) {
-  border-top-right-radius: 40px;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(2) {
-  border-top-left-radius: 40px;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(3) {
-  border-bottom-right-radius: 40px;
-}
-.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(4) {
-  border-bottom-left-radius: 40px;
-=======
 }
 .aboutUsSectionBack .aboutUsSection .aboutUsSectionBoxes {
   width: 40%;
@@ -997,6 +949,53 @@ img {
   border-bottom-left-radius: 40px;
 }
 
+.aboutUsSectionBoxes {
+  width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 3px;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox {
+  background-color: #f4f5fc;
+  transition: all 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox:hover {
+  background-color: #e8eaf9;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox svg {
+  fill: #ff7065;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #28416e;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span:nth-child(1) {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox .aboutUsSectionCounter > span:nth-child(2) {
+  font-size: 15px;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(1) {
+  border-top-right-radius: 40px;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(2) {
+  border-top-left-radius: 40px;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(3) {
+  border-bottom-right-radius: 40px;
+}
+.aboutUsSectionBoxes .aboutUsSectionBox:nth-child(4) {
+  border-bottom-left-radius: 40px;
+}
+
 .servicesSectionBack .servicesSection .servicesParent {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1016,7 +1015,6 @@ img {
 }
 .servicesSectionBack .servicesSection .servicesParent .serviceItem h3 {
   font-size: 17px;
->>>>>>> Stashed changes
 }
 
 .consultationSectionBack .consultationSection {
