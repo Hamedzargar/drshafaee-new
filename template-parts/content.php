@@ -34,7 +34,7 @@
 			<span><?php echo get_the_author() ?></span>
 		</div>
 		<div class="blogCardHeaderItem">
-			<?php get_post_primary_category(); ?>
+			<?php //get_post_primary_category(); ?>
 		</div>
 	</div>
 	<div class="entry-content">
