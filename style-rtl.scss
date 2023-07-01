@@ -264,6 +264,7 @@ img{
         }
     }
 }
+<<<<<<< Updated upstream
 .personnelInfo{
     background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
     padding: 15px;
@@ -277,6 +278,8 @@ img{
         }
     }
 }
+=======
+>>>>>>> Stashed changes
 .aboutUsSectionBack{
     .aboutUsSection{
         display: flex;
@@ -292,10 +295,62 @@ img{
             }
             p{
                 color: $textColorSemi;
+<<<<<<< Updated upstream
+=======
+            }
+        }
+        .aboutUsSectionBoxes{
+            width: 40%;
+            display: grid;
+            grid-template-columns: repeat(2,minmax(0,1fr));
+            grid-gap: 3px;
+            .aboutUsSectionBox{
+                background-color: $backColorLight;
+                transition: all 0.3s;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                &:hover{
+                    background-color: darken($backColorLight , 3%);
+                }
+                svg{
+                    fill: #ff7065;
+                }
+                .aboutUsSectionCounter{
+                    >span{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        color: $textColorSemi;
+                        &:nth-child(1){
+                            font-size: 35px;
+                            font-weight: 700;
+                            line-height: 30px;
+                        }
+                        &:nth-child(2){
+                            font-size: 15px;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    border-top-right-radius: 40px;
+                }
+                &:nth-child(2){
+                    border-top-left-radius: 40px;
+                }
+                &:nth-child(3){
+                    border-bottom-right-radius: 40px;
+                }
+                &:nth-child(4){
+                    border-bottom-left-radius: 40px;
+                }
+>>>>>>> Stashed changes
             }
         }
     }
 }
+<<<<<<< Updated upstream
 
 .aboutUsSectionBoxes{
     width: 40%;
@@ -347,6 +402,32 @@ img{
 }
 
 
+=======
+.servicesSectionBack{
+    .servicesSection{
+        .servicesParent{
+            display: grid;
+            grid-template-columns: repeat(5,minmax(0,1fr));
+            grid-gap: 30px;
+            .serviceItem{
+                display: block;
+                text-align: center;
+                .iconBox{
+                    background-color: $mainColor;
+                    width: 120px;
+                    height: 120px;
+                    margin-right: auto;
+                    margin-left: auto;
+                    border-radius: 7px;
+                }
+                h3{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+>>>>>>> Stashed changes
 .consultationSectionBack{
     .consultationSection{
         display: flex;
@@ -501,55 +582,61 @@ img{
         }
     }
 }
-.serviceUsSectionHomeBack{
-    background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-    .serviceUsSectionHome{
-        padding: 20px;
-        width: 70%;
-        .serviceUsSectionHeading{
-            text-align: center;
-            margin-bottom: 30px;
+.contactUsPageParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .contactUsLeft , .contactUsRight{
+        width: 48%;
+        @include xs{
+            width: 100%;
         }
-        .serviceUsSectionImageRow1{
+        svg{
+            margin-left: 5px;
+            width: 18px;
+            height: 18px;
+            fill: $mainColorDark;
+        }
+    }
+    .contactUsLeft{
+        @include xs{
+            order: 1;
+        }
+    }
+    .contactUsRight{
+        @include xs{
+            order: 2;
+        }
+    }
+    .generalCU{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+        span{
+            display: block;
+            height: 18px;
+            width: calc(100% - 25px);
+        }
+    }
+    .openDaysParent{
+        padding: 30px 0;
+        ul{
+            padding: 0;
+        }
+    }
+    .socialMediaSection{
+        .SocialMediaIcon{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            margin: 40px 0;
-            .serviceUsSectionSvg{
+            justify-content: center;
+            a{
+                display: flex;
+                margin: 0 10px;
                 svg{
-                    width: 100px;
-                    height: 100px;
-                    background: #469fe2;
-                    padding: 30px;
-                    border-radius: 5px;
-                    fill: #fff;
-                    box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
-                }
-                p{
-                    text-align: center;
-                }
-            }
-        }
-        .serviceUsSectionImageRow2{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 77%;
-            margin: auto;
-            .serviceUsSectionSvg{
-                svg{
-                    width: 100px;
-                    height: 100px;
-                    background: #469fe2;
-                    padding: 30px;
-                    border-radius: 5px;
-                    fill: #fff;
-                    box-shadow: 0 5px 7px 5px rgba(0, 0, 0, 0.08);
-                }
-                p{
-                    text-align: center;
+                    margin: 0;
+                    width: 25px;
+                    height: 25px;
                 }
             }
         }
