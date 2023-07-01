@@ -777,7 +777,7 @@ img {
   justify-content: space-between;
 }
 .mainFooterBack .footerCulomn1 {
-  width: 28%;
+  width: 25%;
 }
 @media screen and (max-width: 480px) {
   .mainFooterBack .footerCulomn1 {
@@ -796,34 +796,38 @@ img {
   text-align: justify;
 }
 .mainFooterBack .footerCulomn2 {
-  width: 15%;
+  width: 21%;
 }
 @media screen and (max-width: 480px) {
   .mainFooterBack .footerCulomn2 {
-    width: 50% !important;
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 768px) {
   .mainFooterBack .footerCulomn2 {
-    width: 30%;
+    width: 50%;
   }
 }
-.mainFooterBack .footerCulomn2 .innerGeneralFooter li {
-  list-style-type: none;
-  margin-bottom: 15px;
-  text-align: center;
+.mainFooterBack .footerCulomn2 .innerGeneralFooter a {
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 5px;
+  align-items: center;
+  margin-bottom: 12px;
 }
-.mainFooterBack .footerCulomn2 .innerGeneralFooter li svg {
-  height: 100%;
-  fill: #638be3;
+@media screen and (max-width: 480px) {
+  .mainFooterBack .footerCulomn2 .innerGeneralFooter a .addressSvgRes {
+    width: 20px;
+    height: 20px;
+  }
 }
-.mainFooterBack .footerCulomn2 .innerGeneralFooter li span {
+.mainFooterBack .footerCulomn2 .innerGeneralFooter a svg {
+  margin-left: 5px;
+  fill: #2c62d6;
+}
+.mainFooterBack .footerCulomn2 .innerGeneralFooter a span {
   margin-right: 5px;
+  text-align: justify;
 }
-.mainFooterBack .footerCulomn2 .innerGeneralFooter li span:hover {
+.mainFooterBack .footerCulomn2 .innerGeneralFooter a span:hover {
   color: #0196fc;
 }
 .mainFooterBack .footerCulomn3 {
@@ -831,12 +835,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .mainFooterBack .footerCulomn3 {
-    width: 50% !important;
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 768px) {
   .mainFooterBack .footerCulomn3 {
-    width: 30%;
+    width: 40%;
   }
 }
 .mainFooterBack .footerCulomn3 .innerLinkFooter li {
@@ -847,7 +851,7 @@ img {
   color: #0196fc;
 }
 .mainFooterBack .footerCulomn4 {
-  width: 21%;
+  width: 27%;
 }
 @media screen and (max-width: 480px) {
   .mainFooterBack .footerCulomn4 {
@@ -856,8 +860,24 @@ img {
 }
 @media screen and (max-width: 768px) {
   .mainFooterBack .footerCulomn4 {
-    width: 30%;
+    width: 50%;
   }
+}
+.mainFooterBack .footerCulomn4 .emailBoxFooter form p {
+  display: flex;
+}
+.mainFooterBack .footerCulomn4 .emailBoxFooter form p input[type=email] {
+  margin-right: 0;
+  border-radius: 0 45px 45px 0;
+  padding: 10px 20px;
+}
+.mainFooterBack .footerCulomn4 .emailBoxFooter form p input[type=submit] {
+  width: 25%;
+  border-radius: 45px 0 0 45px;
+  padding: 10px 20px;
+}
+.mainFooterBack .footerCulomn4 .emailBoxFooter form p input[type=submit]:hover {
+  background-color: #224ead;
 }
 .mainFooterBack .footerCopyRightParent {
   padding: 25px 0 15px 0;
@@ -1118,28 +1138,16 @@ img {
 
 .contactIconSocial {
   display: flex;
-  justify-content: center;
 }
 .contactIconSocial a {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  margin: 5px 7px;
-  background-color: #f4f5fc;
-  border-radius: 100%;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06);
+  margin: 0 10px;
 }
 .contactIconSocial a svg {
-  margin: 0 5px;
-  fill: #638be3;
-  width: 22px;
-  height: 22px;
-  transition: all 0.3s;
-}
-.contactIconSocial a svg:hover {
   fill: #2c62d6;
+  margin: 0;
+  width: 25px;
+  height: 25px;
 }
 
 .headericons {
