@@ -951,9 +951,13 @@ img {
   margin-right: auto;
   margin-left: auto;
   border-radius: 7px;
+  transition: all 0.3s;
 }
 .servicesSectionBack .servicesSection .servicesParent .serviceItem h3 {
   font-size: 17px;
+}
+.servicesSectionBack .servicesSection .servicesParent .serviceItem:hover .iconBox {
+  background-color: #0178c9;
 }
 
 .consultationSectionBack .consultationSection {
