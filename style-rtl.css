@@ -658,11 +658,39 @@ img {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .CounselingBtn {
+    display: none;
+  }
+}
 .mainHeaderBack .mainHeader .logoSection {
   margin-left: 30px;
 }
+@media screen and (max-width: 992px) {
+  .mainHeaderBack .mainHeader .logoSection {
+    margin-left: 0;
+  }
+}
 .mainHeaderBack .mainHeader .logoSection svg {
   height: 70px;
+}
+@media screen and (max-width: 992px) {
+  .mainHeaderBack .mainHeader .logoSection svg {
+    height: 50px;
+  }
+}
+.mainHeaderBack .mainHeader .mobileMenuSection {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .mobileMenuSection {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainHeaderBack .mainHeader .menuSection {
+    display: none;
+  }
 }
 .mainHeaderBack .mainHeader .menuSection .mainMenu ul {
   margin: 0;
@@ -674,6 +702,9 @@ img {
 .mainHeaderBack .mainHeader .menuSection .mainMenu ul li {
   list-style-type: none;
 }
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul li::before {
+  display: none;
+}
 .mainHeaderBack .mainHeader .menuSection .mainMenu ul li a {
   padding: 10px;
   font-size: 15px;
@@ -682,6 +713,54 @@ img {
 .mainHeaderBack .mainHeader .menuSection .mainMenu ul .current-menu-item a {
   color: #001b4c;
   font-weight: 500;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children {
+  transition: all 0.4s;
+  position: relative;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children a {
+  display: flex;
+  align-items: center;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children a svg {
+  margin-right: 5px;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children ul {
+  position: absolute;
+  background-color: #fff;
+  width: auto;
+  min-width: 150px;
+  left: 0;
+  right: 0;
+  transition: all 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(5px);
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children ul li:last-child {
+  border-bottom: none;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children ul li a {
+  display: block;
+  width: 100%;
+  padding: 7px 10px;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children ul li:hover {
+  background-color: #d7e1f7;
+}
+.mainHeaderBack .mainHeader .menuSection .mainMenu ul .menu-item-has-children:hover ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .introSectionBack {
@@ -1040,102 +1119,6 @@ img {
   width: 45%;
 }
 
-.page-id-20 .mainHeaderBack {
-  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-  margin-top: 0;
-  padding: 15px 0;
-}
-.page-id-20 .aboutUsSectionBack .aboutUsSection .aboutUsSectionRight {
-  width: 30%;
-}
-.page-id-20 .aboutUsSectionBack .aboutUsSection .aboutUsSectionInfo {
-  width: 45%;
-}
-
-.page-id-18 .mainHeaderBack {
-  background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-  margin-top: 0;
-  padding: 15px 0;
-}
-.page-id-18 .formSubmitSectionBack {
-  width: 45% !important;
-  margin: 50px 0;
-  background: none;
-}
-@media screen and (max-width: 480px) {
-  .page-id-18 .formSubmitSectionBack {
-    width: 100% !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .page-id-18 .formSubmitSectionBack {
-    width: 90% !important;
-    margin: 50px auto;
-  }
-}
-.page-id-18 .formSubmitSectionBack .formSubmit {
-  width: 100% !important;
-  background: none;
-}
-.page-id-18 .formSubmitSectionBack input {
-  background: #ebeffa;
-}
-@media screen and (max-width: 480px) {
-  .page-id-18 .contactDetail {
-    width: 100% !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  .page-id-18 .contactDetail {
-    width: 90% !important;
-    margin: auto;
-  }
-}
-
-.contactPageBack .contactPage .contactPageSectionHeading {
-  text-align: center;
-  margin: 50px 0;
-}
-.contactPageBack .contactPage .contactPageBox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail {
-  width: 45%;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection {
-  margin: 25px 0;
-  border-bottom: 1px solid #2c62d6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection .rowUp {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection .rowUp a {
-  width: 24%;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection .rowDown {
-  margin: 30px 0;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection a {
-  display: flex;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection a svg {
-  height: 100%;
-  fill: #638be3;
-}
-.contactPageBack .contactPage .contactPageBox .contactDetail .contactIconSection a span {
-  margin-right: 5px;
-}
-
 .contactIconSocial {
   display: flex;
 }
@@ -1152,6 +1135,8 @@ img {
 
 .headericons {
   margin-right: auto;
+  display: flex;
+  align-items: center;
 }
 .headericons a {
   width: 45px;
@@ -1164,6 +1149,7 @@ img {
   width: 20px;
   height: 20px;
   fill: #28416e;
+  stroke: #28416e;
 }
 
 .contactUsPageParent {
@@ -1384,4 +1370,112 @@ img {
 }
 .mainAboutUsParent .aboutUsSecondSectoin .aboutUsSecondLeft .aboutUsSectionBoxes {
   width: 100%;
+}
+
+.stickyHeaderParent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -100px;
+  transition: all 0.5s;
+  z-index: 999;
+}
+.stickyHeaderParent .mainHeaderBack {
+  background-color: #fff;
+  margin: 0;
+  padding: 5px 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.03);
+}
+.stickyHeaderParent .mainHeaderBack .mainHeader .logoSection svg {
+  height: 50px;
+}
+.stickyHeaderParent .mainHeaderBack .mainHeader .menu-item-has-children ul {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.showStickyHeader {
+  top: 0;
+}
+
+.mobileMenyParent {
+  background-color: #fff;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  bottom: 0;
+  right: -100px;
+  width: 300px;
+  height: auto;
+  display: none;
+  transition: all 0.9s;
+}
+.mobileMenyParent .mobileMenuHeader .mobileMenuClose {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px;
+}
+.mobileMenyParent .mobileMenu ul {
+  padding: 0;
+}
+.mobileMenyParent .mobileMenu ul li {
+  padding-right: 15px;
+  display: flex;
+  border-radius: 15px;
+  margin: 0 10px;
+}
+.mobileMenyParent .mobileMenu ul li::before {
+  display: none;
+}
+.mobileMenyParent .mobileMenu ul li a {
+  width: 100%;
+  padding: 15px;
+  padding-right: 25px;
+  position: relative;
+}
+.mobileMenyParent .mobileMenu ul li a::after {
+  position: absolute;
+  content: url("data:image/svg+xml,%3Csvg viewBox='-2 -2 24 24' width='20' height='20' fill='%23fff' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin' class='jam jam-medical'%3E%3Cpath d='M7 12.917v.583a4.5 4.5 0 1 0 9 0v-1.67a3.001 3.001 0 1 1 2 0v1.67a6.5 6.5 0 1 1-13 0v-.583A6.002 6.002 0 0 1 0 7V2a2 2 0 0 1 2-2h1a1 1 0 1 1 0 2H2v5a4 4 0 1 0 8 0V2H9a1 1 0 1 1 0-2h1a2 2 0 0 1 2 2v5a6.002 6.002 0 0 1-5 5.917zM17 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2z'/%3E%3C/svg%3E");
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 15px 0;
+}
+.mobileMenyParent .mobileMenu ul .current-menu-item {
+  background-color: #1481c9;
+}
+.mobileMenyParent .mobileMenu ul .menu-item-has-children {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mobileMenyParent .mobileMenu ul .menu-item-has-children ul li a {
+  font-size: 13px;
+  opacity: 0.8;
+  padding: 10px;
+}
+.mobileMenyParent .mobileMenu ul .menu-item-has-children ul li a::after {
+  display: none;
+}
+
+.mainSiteOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9999;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.showSiteOverlay {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style-rtl.css.map */

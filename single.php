@@ -30,7 +30,7 @@ get_header();
 					<h2>مطالب مشابه</h2>
 				</div>
 				<ul class="relatedPost">
-					<?php get_related_posts($post) ?>
+					<?php //get_related_posts($post) ?>
 				</ul>
 			</div>
 			<?php
