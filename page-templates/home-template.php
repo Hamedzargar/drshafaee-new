@@ -174,22 +174,5 @@ get_header();
         </div>
     </div>
 </div>
-<div class="consultationSectionBack sectionPadding">
-    <div class="consultationSection mainView">
-        <div class="consultationSectionForm darkBorder highRadius mediumPadding">
-            <?php echo do_shortcode('[contact-form-7 id="17" title="درخواست مشاوره"]') ?>
-        </div>
-        <div class="consultationSectionInfo">
-            <div class="generalHeading mediumMargined">
-                <h3>دکتر یوسف شفائی</h3>
-                <span>فوق تخصص جراحی زیبایی، پلاستیک و ترمیمی</span>
-            </div>
-            <p class="justified">دکتر یوسف شفائی خانقاه با کد نظام پزشکی 85487، فوق تخصص جراحی پلاستیک، زیبایی و ترمیمی است. از سال ۱۳۹۴ لغایت ۱۳۹۵ عضو هیئت علمی رسمی بیمارستان شهید مطهری تهران و از سال  ۱۳۹۵ تا به اکنون عضو هیئت علمی رسمی بیمارستان حضرت فاطمه (س) تهران است. همچنین دکتر یوسف شفائی عضو هیئت علمی دانشگاه علوم پزشکی ایران، انجمن جراحان دست و پلاستیک است. </p>
-            <li class="arrowListStyle">فوق تخصص – دانشگاه اصفهان – ۱۳۸۷-۱۳۹۰</li>
-            <li class="arrowListStyle">دکترای تخصصی – دانشگاه ایران تهران – ۱۳۸۱-۱۳۸۵</li>
-            <li class="arrowListStyle">دکترای حرفه‌ای – دانشگاه شاهد تهران – ۱۳۷۲-۱۳۸۰</li>
-        </div>
-    </div>
-</div>
 <?php
 get_footer();
