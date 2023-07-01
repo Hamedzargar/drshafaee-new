@@ -396,9 +396,16 @@ img{
                     margin-right: auto;
                     margin-left: auto;
                     border-radius: 7px;
+                    transition: all 0.3s;
                 }
                 h3{
                     font-size: 17px;
+                }
+                &:hover{
+                    .iconBox{
+                        background-color: darken($mainColor , 10%);
+                        
+                    }
                 }
             }
         }
