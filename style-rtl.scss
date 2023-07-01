@@ -331,6 +331,55 @@ img{
         }
     }
 }
+
+.aboutUsSectionBoxes{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-gap: 3px;
+    .aboutUsSectionBox{
+        background-color: $backColorLight;
+        transition: all 0.3s;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        &:hover{
+            background-color: darken($backColorLight , 3%);
+        }
+        svg{
+            fill: #ff7065;
+        }
+        .aboutUsSectionCounter{
+            >span{
+                display: block;
+                width: 100%;
+                text-align: center;
+                color: $textColorSemi;
+                &:nth-child(1){
+                    font-size: 35px;
+                    font-weight: 700;
+                    line-height: 30px;
+                }
+                &:nth-child(2){
+                    font-size: 15px;
+                }
+            }
+        }
+        &:nth-child(1){
+            border-top-right-radius: 40px;
+        }
+        &:nth-child(2){
+            border-top-left-radius: 40px;
+        }
+        &:nth-child(3){
+            border-bottom-right-radius: 40px;
+        }
+        &:nth-child(4){
+            border-bottom-left-radius: 40px;
+        }
+    }
+}
 .servicesSectionBack{
     .servicesSection{
         .servicesParent{
@@ -567,5 +616,155 @@ img{
                 }
             }
         }
+    }
+}
+.contactUsPageParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .contactUsLeft , .contactUsRight{
+        width: 48%;
+        @include xs{
+            width: 100%;
+        }
+        svg{
+            margin-left: 5px;
+            width: 18px;
+            height: 18px;
+            fill: $mainColorDark;
+        }
+    }
+    .contactUsLeft{
+        @include xs{
+            order: 1;
+        }
+        form{
+            p{
+                margin: 0 !important;  
+            }
+        }
+
+    }
+    .contactUsRight{
+        @include xs{
+            order: 2;
+        }
+    }
+    .generalCU{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+        span{
+            display: block;
+            height: 18px;
+            width: calc(100% - 25px);
+        }
+    }
+    .openDaysParent{
+        @include xs{
+            padding-top: 10px;
+        }
+        ul{
+            padding: 0;
+        }
+    }
+    .socialMediaSection{
+        .SocialMediaIcon{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            a{
+                display: flex;
+                margin: 0 10px;
+                svg{
+                    margin: 0;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+.mainAboutUsParent{
+    .aboutUsSectionCounter{
+        @include xs{
+            margin-top: 10px;
+        }
+    }
+    .aboutUsFirstSectoin{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .aboutUsFirstRight{
+            width: 38%;
+            @include sm{
+                width: 100%;
+            }
+        }
+        .aboutUsFirstLeft{
+            width: 58%;
+            align-self: center;
+            @include sm{
+                width: 100%;
+            }
+        }
+        ul{
+            padding: 0;
+        }
+    }
+    .descriptionSectionBox{
+        background-color: unset;
+
+    }
+    .descriptionBox{
+        @include md{
+            width: 48%;
+            &:nth-child(1), &:nth-child(2){
+                margin-bottom: 30px;
+            }
+        }
+        @include xs{
+            width: 100% !important;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .aboutUsSecondSectoin{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .aboutUsSecondRight{
+            width: 56%;
+            align-self: center;
+            @include md{
+                width: 100%;
+            }
+        }
+        .aboutUsSecondLeft{
+            width: 40%;
+            align-self: center;
+            @include md{
+                width: 60%;
+                margin: auto;
+            }
+            @include sm{
+                width: 80%;
+            }
+            @include xs{
+                width: 90%;
+            }
+            @include xxs{
+                width: 100%;
+            }
+            .aboutUsSectionBoxes{
+                width: 100%;
+            }
+        }
+
     }
 }
