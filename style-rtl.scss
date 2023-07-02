@@ -208,11 +208,6 @@ img{
             display: flex;
             justify-content: center;
             align-items: center;
-            svg{
-                fill: #fff;
-                width: 25px;
-                height: 25px;
-            }
         } 
         span{
             line-height: 25px;
@@ -496,6 +491,9 @@ img{
                     margin-left: auto;
                     border-radius: 7px;
                     transition: all 0.3s;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 h3{
                     font-size: 17px;
