@@ -177,3 +177,15 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function bbloomer_shop_product_short_description() {
+	the_excerpt();
+}
+function my_excerpt_length($length){
+	return 40;
+}
+add_filter('excerpt_length', 'my_excerpt_length');
+
+function new_excerpt_more( $more ) {
+	return ' ... ';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
