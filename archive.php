@@ -14,10 +14,10 @@ get_header();
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header generalHeading bigHeading highMargined centeredText">
+			<header class="page-header generalHeading highMargined bottomBorder archiveCatTitle">
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
+					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_description( '<span class="archive-description">', '</span>' );
 				?>
 			</header><!-- .page-header -->
 			<div class="archiveParent">

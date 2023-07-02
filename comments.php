@@ -20,7 +20,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area singleBox lowRadius highPadding">
+<div id="comments" class="comments-area singleBox gradient3 highRadius highPadding mediumMargined">
 
 	<?php
 	// You can start editing here -- including this comment!

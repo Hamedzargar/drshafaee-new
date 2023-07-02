@@ -15,9 +15,21 @@
 get_header();
 ?>
 	<main id="primary" class="site-main mainView">
-		<div class="generalHeading bigHeading highMargined centeredText bottomBorder">
+		<div class="generalHeading highMargined centeredText bottomBorder">
 			<h1>مجله دکتر شفائی</h1>
 			<span>آخرین اخبار و به روزترین دانستنی های سلامت و زیبایی</span>
+		</div>
+		<div class="loopAllCategory mediumMargined">
+			<?php
+			$categories = get_terms( array(
+				'taxonomy' => 'category',
+				'hide_empty' => true,
+				'exclude'=>array('1')
+			) );
+			foreach($categories as $category) {
+			echo '<a class="gradient3 lowPadding generalArchiveCat lowRadius" href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+			}
+			?>
 		</div>
 		<?php
 		if ( have_posts() ) :
