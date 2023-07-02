@@ -400,7 +400,7 @@ input {
   width: 100%;
   padding: 10px 20px;
 }
-input[type=text], input[type=password], input[type=email], input[type=tel] {
+input[type=text], input[type=password], input[type=email], input[type=tel], input[type=url] {
   border: none;
   background-color: #f4f5fc;
   border-radius: 45px;
@@ -408,21 +408,26 @@ input[type=text], input[type=password], input[type=email], input[type=tel] {
   font-size: 14px;
   margin-right: -15px;
 }
-input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder {
+input[type=text]::-webkit-input-placeholder, input[type=password]::-webkit-input-placeholder, input[type=email]::-webkit-input-placeholder, input[type=tel]::-webkit-input-placeholder, input[type=url]::-webkit-input-placeholder {
   color: #373c60;
   opacity: 0.25;
 }
-input[type=text]:-moz-placeholder, input[type=password]:-moz-placeholder, input[type=email]:-moz-placeholder, input[type=tel]:-moz-placeholder {
+input[type=text]:-moz-placeholder, input[type=password]:-moz-placeholder, input[type=email]:-moz-placeholder, input[type=tel]:-moz-placeholder, input[type=url]:-moz-placeholder {
   color: #373c60;
   opacity: 0.25;
 }
-input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder {
+input[type=text]::-moz-placeholder, input[type=password]::-moz-placeholder, input[type=email]::-moz-placeholder, input[type=tel]::-moz-placeholder, input[type=url]::-moz-placeholder {
   color: #373c60;
   opacity: 0.25;
 }
-input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder {
+input[type=text]:-ms-input-placeholder, input[type=password]:-ms-input-placeholder, input[type=email]:-ms-input-placeholder, input[type=tel]:-ms-input-placeholder, input[type=url]:-ms-input-placeholder {
   color: #373c60;
   opacity: 0.25;
+}
+input[type=checkbox] {
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0;
 }
 input[type=submit] {
   background-color: #2c62d6;
@@ -625,6 +630,38 @@ select option {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 1.5em;
+}
+
+.hashtagParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hashtagItem {
+  background-color: #c8e6fa;
+  border: 1px solid #83c6f3;
+  color: #0d5483;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 3px 20px 3px 10px;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.hashtagItem::before {
+  content: "#";
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #0d5483;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 a {
@@ -1724,4 +1761,72 @@ img {
 }
 .searchContainer .searchButtonContainer .closeSearchBtn {
   margin-right: 10px;
+}
+
+.comment-form label {
+  margin-bottom: 0;
+}
+.comment-form input {
+  margin-right: 0;
+}
+
+.portfolioSectionBack .portfolioSection .portfolioItemParent {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 30px;
+}
+.portfolioSectionBack .portfolioSection .portfolioItemParent .portfolioItem {
+  position: relative;
+  cursor: pointer;
+}
+.portfolioSectionBack .portfolioSection .portfolioItemParent .portfolioItem img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolioSectionBack .portfolioSection .portfolioItemParent .portfolioItem .portfolioItemInfo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+.portfolioSectionBack .portfolioSection .portfolioItemParent .portfolioItem .portfolioItemInfo::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 100%;
+}
+.portfolioSectionBack .portfolioSection .portfolioItemParent .portfolioItem .portfolioItemInfo::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='10px' height='10px' viewBox='0 0 512 512'%3E%3Cpath d='M357.6 500.8a18.3 18.3 0 0 1-12.9-5.4L152 302.7a66.1 66.1 0 0 1 0-93.4L344.7 16.6a18.2 18.2 0 1 1 25.8 25.8L177.8 235.1a29.5 29.5 0 0 0 0 41.8l192.7 192.7a18.3 18.3 0 0 1 0 25.8 17.9 17.9 0 0 1-12.9 5.4Z'%3E%3C/path%3E%3C/svg%3E");
+  height: 17px;
+  position: absolute;
+  left: 19px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.lg-outer {
+  direction: ltr !important;
+}
+.lg-outer * {
+  direction: ltr !important;
+}
+
+.lightGalleryItemsLoader {
+  display: none;
 }/*# sourceMappingURL=style-rtl.css.map */

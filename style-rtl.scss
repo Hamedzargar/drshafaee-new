@@ -1227,3 +1227,72 @@ img{
         }
     }
 }
+.comment-form{
+    label{
+        margin-bottom: 0;
+    }
+    input{
+        margin-right: 0;
+    }
+}
+.portfolioSectionBack{
+    .portfolioSection{
+        .portfolioItemParent{
+            display: grid;
+            grid-template-columns: repeat(4,minmax(0,1fr));
+            grid-gap: 30px;
+            .portfolioItem{
+                position: relative;
+                cursor: pointer;
+                img{
+                    width: 300px;
+                    height: 300px;
+                    display: block;
+                    object-fit: cover;
+                }
+                .portfolioItemInfo{
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-radius: 0 0 10px 10px;
+                    background-color: rgba(0,0,0,0.5);
+                    color: #fff;
+                    padding: 20px;
+                    &::before{
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        background-color: rgba(255, 255, 255, 0.2);
+                        left: 15px;
+                        top: 0;
+                        bottom: 0;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        border-radius: 100%;
+                    }
+                    &::after{
+                        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='10px' height='10px' viewBox='0 0 512 512'%3E%3Cpath d='M357.6 500.8a18.3 18.3 0 0 1-12.9-5.4L152 302.7a66.1 66.1 0 0 1 0-93.4L344.7 16.6a18.2 18.2 0 1 1 25.8 25.8L177.8 235.1a29.5 29.5 0 0 0 0 41.8l192.7 192.7a18.3 18.3 0 0 1 0 25.8 17.9 17.9 0 0 1-12.9 5.4Z'%3E%3C/path%3E%3C/svg%3E");
+                        height: 17px;
+                        position: absolute;
+                        left: 19px;
+                        top: 0;
+                        bottom: 0;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+.lg-outer{
+    direction: ltr !important;
+    *{
+        direction: ltr !important;
+    }
+}
+.lightGalleryItemsLoader{
+    display: none;
+}
