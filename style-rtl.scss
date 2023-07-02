@@ -250,39 +250,39 @@ img{
     
 }
 .mainFooterBack{
-    padding-top: 30px;
     margin-top: 30px;
     .mainFooter{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    background: linear-gradient(0deg, #e2e5fc 0%, #f4f5fc 100%);
-    .footerCulomn1{
-        width: 25%;
-        @include xs{
-            width: 100%;
-        }
-        @include sm{
-            width: 100%;
-        }
-        .logoSection{
-            svg{
-                height: 70px;
+    background: linear-gradient(90deg, #e2e5fc 0%, #f4f5fc 100%);
+    .logoSection{
+        padding: 0 0 30px 0;
+        border-bottom: 1px solid lighten($lowSatColor,20%);
+        margin: 0 0 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .sectionRight{
+            @include xs{
+                width: 100%;
+                margin-bottom: 15px;
             }
         }
-        p{
-            text-align: justify;
+        svg{
+            height: 70px;
         }
     }
-    .footerCulomn2{
-        width: 21%;
+    .footerCulomn1{
+        width: 16%;
         @include xs{
             width: 100% !important;
         }
         @include sm{
-            width: 50%;
-        }  
+            width: 100%;
+        }
         .innerGeneralFooter{
             a{
                 display: flex;
@@ -308,10 +308,10 @@ img{
             }
         }
     }
-    .footerCulomn3{
-        width: 15%;
+    .footerCulomn2{
+        width: 10%;
         @include xs{
-            width: 100% !important;
+            width: 40% !important;
         }
         @include sm{
             width: 40%;
@@ -319,7 +319,29 @@ img{
         .innerLinkFooter{
             li{
                 list-style-type: none;
-                padding: 5px 0;
+                padding: 2px 0;
+                font-weight: 300;
+                a{
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+    .footerCulomn3{
+        width: 24%;
+        @include xs{
+            width: 40% !important;
+        }
+        @include sm{
+            width: 40%;
+        }
+        .innerLinkFooter{
+            li{
+                list-style-type: none;
+                padding: 2px 0;
+                font-weight: 300;
                 a{
                     &:hover{
                         color: $mainColor;
@@ -329,12 +351,36 @@ img{
         }
     }
     .footerCulomn4{
-        width: 27%;
+        width: 30%;
         @include xs{
             width: 100% !important;
         }
         @include sm{
             width: 50%;
+        }
+        .contactIconSocial{
+            display: flex;
+            // justify-content: left;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                margin: 5px;
+                background-color: $backColorLight;
+                border-radius: 100%;
+                svg{
+                    margin: 0 5px;
+                    fill: $lowSatColor;
+                    width: 22px;
+                    height: 22px;
+                    transition: all 0.3s;
+                    &:hover{
+                        fill: $mainColorDark;
+                    }
+                }
+            }
         }
         .emailBoxFooter{
             form{
@@ -359,20 +405,31 @@ img{
             }
         }
     }
-    .footerCopyRightParent{
-        padding: 25px 0 15px 0;
-        .footerCopyRight{
+}
+.footerCopyRightParent{
+    background: linear-gradient(90deg, #e2e5fc 0%, #f4f5fc 100%);
+    padding: 10px 0 25px 0;
+    font-size: 13px;
+    .footerCopyRight{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid lighten($lowSatColor,20%);
+        padding-top: 10px;
+        .footerCopyRightPa{
             p{
-                font-weight: 400;
-                text-align: center;
-                margin: 0;
-                border-top: 1px solid $mainColorDark;
-                padding-top: 10px;
-            }
-            a{
-                color: $lowSatColor;
+            font-weight: 300;
+            text-align: center;
+            margin: 0;
             }
         }
+        .footerCopyRightLink{
+            a{
+                margin-right: 20px;
+            }
+        }
+        a{
+            color: darken($lowSatColor,10%);
+        }   
     }
 }
 .aboutUsSectionBack{
@@ -666,20 +723,20 @@ img{
 //         }
 //     }
 // }
-.contactIconSocial{
-    display: flex;
-    // justify-content: center;
-    a{
-        display: flex;
-        margin: 0 10px;
-        svg{
-            fill: #2c62d6;
-            margin: 0;
-            width: 25px;
-            height: 25px;
-        }
-    }
-}
+// .contactIconSocial{
+//     display: flex;
+//     // justify-content: center;
+//     a{
+//         display: flex;
+//         margin: 0 10px;
+//         svg{
+//             fill: #2c62d6;
+//             margin: 0;
+//             width: 25px;
+//             height: 25px;
+//         }
+//     }
+// }
 
 .headericons{
     margin-right: auto;
