@@ -189,7 +189,7 @@ function bbloomer_shop_product_short_description() {
 	the_excerpt();
 }
 function my_excerpt_length($length){
-	return 40;
+	return 30;
 }
 add_filter('excerpt_length', 'my_excerpt_length');
 
