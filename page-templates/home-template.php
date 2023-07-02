@@ -91,7 +91,7 @@ get_header();
     <div class="servicesSection mainView">
     <div class="generalHeading highMargined centeredText">
         <h2>خدمات ما</h2>
-        <span>خدمات زیبایی، پلاستیک و ترمیمی کلینیک دکتر شفائی</span>
+        <span>شعار ما در این راه، زیبایی به سبک طبیعی بوده و بر این اصل پایبندیم.</span>
     </div>
     <div class="servicesParent">
         <a href="#" class="serviceItem">

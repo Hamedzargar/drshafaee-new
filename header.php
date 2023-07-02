@@ -34,6 +34,17 @@
 		);
 	?>
 </div>
+<div class="searchContainer highRadius mediumPadding mediumMargined">
+    <form action="/" method="get">
+        <button class="searchSubmitBtn" type="submit"><svg stroke="#777" width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><circle cx="11.854" cy="11.854" r="9" fill="none" stroke-miterlimit="10" stroke-width="2"/><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M18.451 18.451l7.695 7.695"/></svg></button>
+        <input type="text" name="s" id="search" value="<?php the_search_query(); ?>" placeholder="دنبال چه می‌گردید؟" />
+		<div class="searchButtonContainer">
+			<button  type="submit" class="generalButton" fdprocessedid="x887ac">جستجو</button>
+			<button class="generalButton outlineButton noArrowButton closeSearchBtn">بستن</button>
+		</div>
+    </form>
+
+</div>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
@@ -53,10 +64,10 @@
 				?>
 			</div>
 			<div class="headericons">
-				<a href="#" class="mobileMenuSection">
+				<a class="mobileMenuSection">
 					<svg width="20" height="20" stroke="#28416e" stroke-width="2.2" stroke-linecap="round" viewBox="2 10 20 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
 				</a>
-				<a href="#"><svg viewBox="0 0 512 512"><path d="M405.1 80.9c-89.4-89.4-234.8-89.4-324.2 0s-89.4 234.8 0 324.2c82.7 82.7 213.2 88.9 303.1 18.7l66.1 66.1a28.1 28.1 0 0 0 39.8-39.8L423.8 384c70.2-89.9 64-220.4-18.7-303.1Zm-39.8 284.4c-67.4 67.5-177.2 67.5-244.6 0s-67.5-177.2 0-244.6 177.2-67.5 244.6 0 67.5 177.2 0 244.6Z"/></svg></a>
+				<a class="searchIcon"><svg viewBox="0 0 512 512"><path d="M405.1 80.9c-89.4-89.4-234.8-89.4-324.2 0s-89.4 234.8 0 324.2c82.7 82.7 213.2 88.9 303.1 18.7l66.1 66.1a28.1 28.1 0 0 0 39.8-39.8L423.8 384c70.2-89.9 64-220.4-18.7-303.1Zm-39.8 284.4c-67.4 67.5-177.2 67.5-244.6 0s-67.5-177.2 0-244.6 177.2-67.5 244.6 0 67.5 177.2 0 244.6Z"/></svg></a>
 				<!-- <form action="/" method="get">
 					<input placeholder="جست‌وجو در وبسایت..." type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
 					<button><svg viewBox="0 0 512 512"><path d="M405.1 80.9c-89.4-89.4-234.8-89.4-324.2 0s-89.4 234.8 0 324.2c82.7 82.7 213.2 88.9 303.1 18.7l66.1 66.1a28.1 28.1 0 0 0 39.8-39.8L423.8 384c70.2-89.9 64-220.4-18.7-303.1Zm-39.8 284.4c-67.4 67.5-177.2 67.5-244.6 0s-67.5-177.2 0-244.6 177.2-67.5 244.6 0 67.5 177.2 0 244.6Z"/></svg></button>
@@ -89,7 +100,7 @@
 					<a href="#" class="mobileMenuSection">
 						<svg width="20" height="20" stroke="#28416e" stroke-width="2.2" stroke-linecap="round" viewBox="2 10 20 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
 					</a>
-					<a href="#"><svg viewBox="0 0 512 512"><path d="M405.1 80.9c-89.4-89.4-234.8-89.4-324.2 0s-89.4 234.8 0 324.2c82.7 82.7 213.2 88.9 303.1 18.7l66.1 66.1a28.1 28.1 0 0 0 39.8-39.8L423.8 384c70.2-89.9 64-220.4-18.7-303.1Zm-39.8 284.4c-67.4 67.5-177.2 67.5-244.6 0s-67.5-177.2 0-244.6 177.2-67.5 244.6 0 67.5 177.2 0 244.6Z"/></svg></a>
+					<a href="#" class="searchIcon"><svg viewBox="0 0 512 512"><path d="M405.1 80.9c-89.4-89.4-234.8-89.4-324.2 0s-89.4 234.8 0 324.2c82.7 82.7 213.2 88.9 303.1 18.7l66.1 66.1a28.1 28.1 0 0 0 39.8-39.8L423.8 384c70.2-89.9 64-220.4-18.7-303.1Zm-39.8 284.4c-67.4 67.5-177.2 67.5-244.6 0s-67.5-177.2 0-244.6 177.2-67.5 244.6 0 67.5 177.2 0 244.6Z"/></svg></a>
 					<!-- <form action="/" method="get">
 						<input placeholder="جست‌وجو در وبسایت..." type="text" name="s" id="search" value="<?php the_search_query(); ?>" />
 						<button><svg viewBox="0 0 512 512"><path d="M405.1 80.9c-89.4-89.4-234.8-89.4-324.2 0s-89.4 234.8 0 324.2c82.7 82.7 213.2 88.9 303.1 18.7l66.1 66.1a28.1 28.1 0 0 0 39.8-39.8L423.8 384c70.2-89.9 64-220.4-18.7-303.1Zm-39.8 284.4c-67.4 67.5-177.2 67.5-244.6 0s-67.5-177.2 0-244.6 177.2-67.5 244.6 0 67.5 177.2 0 244.6Z"/></svg></button>
