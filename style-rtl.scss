@@ -159,6 +159,10 @@ img{
 .introSectionBack{
     padding-top: 150px;
     padding-bottom: 80px;
+    @include sm{
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
     .introSection{
         display: flex;
         flex-wrap: wrap;
@@ -167,9 +171,18 @@ img{
         .introSectionDesc{
             width: 66%;
             height: max-content;
+            @include sm{
+                width: 100%;
+                order: 2;
+            }
         }
         .introSectionImg{
             width: 30%;
+            @include sm{
+                width: 80%;
+                margin: auto;
+                order: 1;
+            }
         }
     }
 }
@@ -181,6 +194,10 @@ img{
     margin: 60px auto;
     padding: 35px 25px;
     border-radius: 25px;
+    @include sm{
+        order: 3;
+        margin: 20px auto;
+    }
     .descriptionBox{
         width: 24%;
         border-radius: 10px;
@@ -366,6 +383,9 @@ img{
         align-items: center;
         .aboutUsSectionInfo{
             width: 45%;
+            @include sm{
+                width: 100%;
+            }
             .generalHeading{
                 span{
                     font-size: 14px;
@@ -380,6 +400,15 @@ img{
             display: grid;
             grid-template-columns: repeat(2,minmax(0,1fr));
             grid-gap: 3px;
+            @include sm{
+                width: 80%;
+                margin: auto;
+                margin-top: 20px;
+            }
+            @include xs{
+                width: 100%;
+                margin-top: 20px;
+            }
             .aboutUsSectionBox{
                 background-color: $backColorLight;
                 transition: all 0.3s;
@@ -480,6 +509,12 @@ img{
             display: grid;
             grid-template-columns: repeat(5,minmax(0,1fr));
             grid-gap: 30px;
+            @include sm{
+                grid-template-columns: repeat(3,minmax(0,1fr));
+            }
+            @include xs{
+                grid-template-columns: repeat(2,minmax(0,1fr));
+            }
             .serviceItem{
                 display: block;
                 text-align: center;
@@ -516,9 +551,18 @@ img{
         align-items: center;
         .consultationSectionForm{
             width: 45%;
+            @include sm{
+                width: 100%;
+                order: 2;
+                margin-top: 20px;
+            }
         }
         .consultationSectionInfo{
             width: 45%;
+            @include sm{
+                width: 100%;
+                order: 1;
+            }
         }
     }
 }
@@ -784,14 +828,13 @@ img{
         }
     }
 }
-
+.aboutUsSectionCounter{
+    @include xs{
+        margin-top: 10px;
+    }
+}
 
 .mainAboutUsParent{
-    .aboutUsSectionCounter{
-        @include xs{
-            margin-top: 10px;
-        }
-    }
     .aboutUsFirstSectoin{
         display: flex;
         flex-wrap: wrap;
@@ -816,21 +859,6 @@ img{
     .descriptionSectionBox{
         background-color: unset;
 
-    }
-    .descriptionBox{
-        @include md{
-            width: 48%;
-            &:nth-child(1), &:nth-child(2){
-                margin-bottom: 30px;
-            }
-        }
-        @include xs{
-            width: 100% !important;
-            margin-bottom: 30px;
-            &:last-child{
-                margin-bottom: 0;
-            }
-        }
     }
     .aboutUsSecondSectoin{
         display: flex;
@@ -864,6 +892,21 @@ img{
             }
         }
 
+    }
+}
+.descriptionBox{
+    @include md{
+        width: 48% !important;
+        &:nth-child(1), &:nth-child(2){
+            margin-bottom: 30px;
+        }
+    }
+    @include xs{
+        width: 100% !important;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
 }
 .stickyHeaderParent{
@@ -902,11 +945,10 @@ img{
     z-index: 99999;
     top: 0;
     bottom: 0;
-    right: -100px;
     width: 300px;
     height: auto;
     display: none;
-    transition: all 0.9s;
+    transition: all 0.4s;
     .mobileMenuHeader {
         .mobileMenuClose{
             display: flex;
@@ -965,7 +1007,6 @@ img{
         }
     }
 }
-
 .mainSiteOverlay{
     background-color: rgba(0,0,0,0.7);
     position: fixed;
@@ -981,4 +1022,151 @@ img{
 .showSiteOverlay{
     opacity: 1;
     visibility: visible;
+}
+.singleBox{
+    border: 1px solid $mainColorDark;
+    margin: 30px auto;
+    max-width: 900px;
+}
+.post-thumbnail{
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+.innerBlogCardHeaderItem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .blogCardHeaderItem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        svg{
+            margin-left: 10px;
+        }
+        span{
+            display: block;
+            height: 20px;
+        }
+    }
+
+}
+.comments-area{
+    textarea{
+        margin: auto;
+    }
+}
+.archiveParent{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 50px;
+    margin-bottom: 30px;
+    @include xs{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 30px;
+    }
+    article{
+        overflow: hidden;
+        header, p{
+            padding: 0 15px;
+        }
+        .archivePostFooter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            opacity: 0.5;
+            font-size: 13px;
+        }
+    }
+}
+.entry-content{
+    h2,h3,h4,h5,h6{
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+.searchContainer{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    height: max-content;
+    margin: auto;
+    padding: 30px;
+    width: 95%;
+    max-width: 500px;
+    background-color: #fff;
+    form{
+            border: 1px solid;
+            overflow: hidden;
+            color: #fff;
+            background: transparent;
+            font-size: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .searchSubmitBtn{
+                    float: right;
+                    background: none;
+                    border: none;
+                    line-height: 48px;
+                    height: 48px;
+                    width: 48px;
+                    cursor: pointer;
+                    padding: 0;
+                    font-size: 21px;
+                    color: inherit;
+                    position: absolute;
+                    border-right: 1px solid $textColorLighter;
+                    left: 30px;
+                    svg{
+                            vertical-align: middle;
+                            stroke: $textColorSemi;
+                    }
+                    &:focus{
+                            border: none;
+                            outline: none;
+                    }
+            }
+            input{
+                    width: 100%;
+                    border: none;
+                    padding: 0 20px;
+                    line-height: 48px;
+                    height: 48px;
+                    margin: 0;
+                    &:focus{
+                            border: none;
+                            outline: none;
+                    }
+
+            }
+    }
+    display: none;
+    .searchButtonContainer{
+        padding-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px auto;
+        .closeSearchBtn{
+            margin-right: 10px;
+        }
+    }
 }
